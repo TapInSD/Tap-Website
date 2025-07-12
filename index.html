@@ -5,88 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TAP – The Artist Playground</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: black;
-      color: white;
-      line-height: 1.6;
-    }
-    header, section {
-      padding: 4rem 2rem;
-      text-align: center;
-    }
-    header {
-      background: linear-gradient(to bottom right, purple, black);
-    }
-    h1, h2 {
-      margin-bottom: 1rem;
-    }
-    .button {
-      margin-top: 2rem;
-      padding: 10px 20px;
-      background: white;
-      color: black;
-      font-weight: bold;
-      border-radius: 5px;
-      text-decoration: none;
-      display: inline-block;
-    }
-    .button:hover {
-      background: #ccc;
-    }
-    .section-dark {
-      background: #111;
-    }
-    .section-light {
-      background: #222;
-    }
-    footer {
-      background: #000;
-      padding: 2rem;
-      text-align: center;
-      font-size: 0.9rem;
-    }
+    body {margin:0; font-family: Arial, sans-serif; color:#333; line-height:1.6;}
+    nav {background:#000; padding:1rem; position:sticky; top:0; z-index:100;}
+    nav a {color:#fff; margin:0 1rem; text-decoration:none; font-weight:bold;}
+    header {background:linear-gradient(to bottom, #4a148c, #000); color:#fff; padding:6rem 2rem; text-align:center;}
+    header h1 {font-size:3rem; margin:0;}
+    header p {font-size:1.2rem; margin:1rem 0;}
+    .btn {background:#fff; color:#000; padding:0.75rem 1.5rem; border:none; border-radius:5px; text-decoration:none; font-weight:bold;}
+    section {padding:4rem 2rem;}
+    .dark {background:#111; color:#fff;}
+    .grid {display:grid; grid-template-columns:1fr; gap:2rem;}
+    @media(min-width: 768px){ .grid {grid-template-columns:repeat(2,1fr);} }
+    .feature {padding:1rem; background:#f9f9f9; border-radius:5px;}
+    .text-center{text-align:center;}
+    footer {background:#000; color:#fff; padding:2rem; text-align:center;}
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>TAP – The Artist Playground</h1>
-    <p>Mobile Live Stream Production for Events, Stories, and Culture</p>
-    <a href="#contact" class="button">Book a Stream</a>
-  </header>
+<nav>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#features">Why TAP</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <section class="section-dark" id="about">
-    <h2>About TAP</h2>
-    <p>TAP (The Artist Playground) is a creative media production company dedicated to helping artists, entrepreneurs, and organizations share their stories. We specialize in mobile live streaming, podcast production, and artist development. Founded by Tyrone and Tay, TAP empowers communities through storytelling, technology, and innovation.</p>
-  </section>
+<header>
+  <h1>TAP – The Artist Playground</h1>
+  <p>Mobile Live Stream Production for Events, Stories, and Culture</p>
+  <a href="#contact" class="btn">Book a Stream</a>
+</header>
 
-  <section class="section-light" id="services">
-    <h2>Our Services</h2>
-    <p><strong>🎥 Live Event Streaming:</strong> Weddings, funerals, concerts, and community events.</p>
-    <p><strong>🎙️ Podcast Production:</strong> We help record, stream, and produce audio & video podcasts.</p>
-    <p><strong>🎨 Artist Development:</strong> Guidance and media tools for emerging creatives.</p>
-    <p><strong>📷 360° Virtual Tours:</strong> Real estate, event spaces, retail shops, and more.</p>
-    <p><strong>💼 Mobile Media Studio:</strong> We bring the studio to you — plug and play, anywhere.</p>
-  </section>
+<section id="about">
+  <h2 class="text-center">About TAP</h2>
+  <p class="text-center">TAP is a creative media production company founded by Tyrone and Tay in San Diego. Our mission is to help artists, entrepreneurs, and communities share their stories through mobile live-streaming, podcasting, and artist development. We bring studio-quality production to your doorstep.</p>
+</section>
 
-  <section class="section-dark" id="partnerships">
-    <h2>Partnerships</h2>
-    <p>We proudly partner with <strong>Dream Radio</strong> and local San Diego businesses to create content that matters.</p>
-    <p>Our network includes community leaders, small business sponsors, and creative collaborators.</p>
-  </section>
+<section id="services" class="dark">
+  <h2 class="text-center">Our Services</h2>
+  <div class="grid">
+    <div class="feature"><strong>🎥 Live Event Streaming</strong><p>Weddings, funerals, concerts, and community events streamed live.</p></div>
+    <div class="feature"><strong>🎙 Podcast Production</strong><p>Audio & video recording, editing, and multi-platform streaming.</p></div>
+    <div class="feature"><strong>🎨 Artist Development</strong><p>Coaching and content tools to support emerging creatives.</p></div>
+    <div class="feature"><strong>📷 360° Virtual Tours</strong><p>Immersive tours for real estate, venues, community spaces, and more.</p></div>
+  </div>
+</section>
 
-  <section class="section-light" id="contact">
-    <h2>Book a Stream or Get in Touch</h2>
-    <p>Email us at: <a href="mailto:info@taplive.co" style="color: white;">info@taplive.co</a></p>
-    <p>Follow us on Instagram: <a href="https://instagram.com/taplive" style="color: white;">@taplive</a></p>
-    <a href="mailto:info@taplive.co" class="button">Contact Us</a>
-  </section>
+<section id="features">
+  <h2 class="text-center">Why Choose TAP</h2>
+  <ul class="grid">
+    <li class="feature"><strong>Mobile Studio:</strong> We bring the gear, crew, and expertise anywhere.</li>
+    <li class="feature"><strong>Multi-Camera:</strong> Engage your audience with dynamic angles & broadcast-grade audio.</li>
+    <li class="feature"><strong>Fast Turnaround:</strong> Reliable setup, streaming, and mailed recordings.</li>
+    <li class="feature"><strong>Community Focus:</strong> We invest in underserved stories and voices.</li>
+  </ul>
+</section>
 
-  <footer>
-    &copy; 2025 TAP – The Artist Playground. All rights reserved.
-  </footer>
+<section id="testimonials" class="dark">
+  <h2 class="text-center">Testimonials</h2>
+  <blockquote class="text-center">“TAP captured our wedding perfectly — we had family watching live across the country. The quality was top-notch and so professional.”</blockquote>
+  <p class="text-center">– A happy couple in San Diego</p>
+  <blockquote class="text-center">“Working with Tyrone was a breeze. They streamed our community event seamlessly and brought real storytelling to life.”</blockquote>
+  <p class="text-center">– San Diego Community Organizer</p>
+</section>
+
+<section id="contact">
+  <h2 class="text-center">Get in Touch</h2>
+  <p class="text-center">Email: <a href="mailto:tapin.live@gmail.com">tapin.live@gmail.com</a> | IG: <a href="https://instagram.com/tapin.live">@tapin.live</a></p>
+  <p class="text-center"><a href="mailto:tapin.live@gmail.com" class="btn">Book a Stream</a></p>
+</section>
+
+<footer>&copy; 2025 TAP – The Artist Playground. All rights reserved.</footer>
 
 </body>
 </html>
