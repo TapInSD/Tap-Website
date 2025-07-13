@@ -1,0 +1,41 @@
+<!DOCTYPE html><html lang='en'>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TAP – The Artist Playground</title>
+  <style>
+    body {margin:0; font-family:'Segoe UI', sans-serif; color:#222; background:#fff; line-height:1.6;}
+    nav {background:#000; padding:1rem; display:flex; justify-content:center; align-items:center; gap:2rem; position:sticky; top:0; z-index:1000;}
+    nav a {color:#fff; text-decoration:none; font-weight:600; padding:0.5rem 1rem; transition:.3s;}
+    nav a:hover {background:#fff; color:#000; border-radius:5px;}
+    header, section {padding:4rem 2rem; text-align:center;}
+    footer {background:#000; color:#fff; padding:2rem; text-align:center;}
+    .hero {background:url('https://source.unsplash.com/1600x600/?studio,media') center/cover no-repeat; color:white; padding:6rem 2rem;}
+    .btn {background:#4a148c; color:#fff; padding:0.75rem 1.5rem; border:none; border-radius:4px; font-weight:bold; text-decoration:none; transition:.3s;}
+    .btn:hover {background:#6a1b9a;}
+    .grid {display:grid; gap:2rem;}
+    @media(min-width:768px) {.grid.two {grid-template-columns:repeat(2,1fr);} .grid.three {grid-template-columns:repeat(3,1fr);}}
+    img.logo {height:60px; vertical-align:middle;}
+    .section-img {width:100%; max-height:300px; object-fit:cover; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.1);}
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html"><img src="logo.png" alt="TAP logo" class="logo"></a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="features.html">Why TAP</a>
+  <a href="testimonials.html">Testimonials</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+        <section>
+          <h2>What People Are Saying</h2>
+          <div class="grid two">
+            <div><blockquote>“TAP streamed our wedding across three states. The quality and care were unbelievable.”</blockquote><p>– A Happy Couple</p></div>
+            <div><blockquote>“Tyrone and the team brought professionalism and heart to our community town hall stream.”</blockquote><p>– San Diego Organizer</p></div>
+          </div>
+        </section>
+        
+<footer>&copy; 2025 TAP – The Artist Playground. All rights reserved.</footer>
+</body></html>
